@@ -230,6 +230,8 @@
 \def\cauthortitle#1{\def\@cauthortitle{#1}}\def\@cauthortitle{}
 \def\csupervisor#1{\def\@csupervisor{#1}}\def\@csupervisor{}
 \def\csupervisortitle#1{\def\@csupervisortitle{#1}}\def\@csupervisortitle{}
+\def\centerprisesupervisor#1{\def\@centerprisesupervisor{#1}}\def\@centerprisesupervisor{}
+\def\centerprisesupervisortitle#1{\def\@centerprisesupervisortitle{#1}}\def\@centerprisesupervisortitle{}
 \def\cfirstsubject#1{\def\@cfirstsubject{#1}}\def\@cfirstsubject{}   % “一级学科”
 \def\cfirstsubjecttitle#1{\def\@cfirstsubjecttitle{#1}}\def\@cfirstsubjecttitle{} % 一级学科名称
 \def\teachertable#1{\def\@teachertable{#1}}\def\@teachertable{}  % 答辩老师表格
@@ -317,6 +319,22 @@
         \@put@covertitle{\@cauthortitle} & \@cauthor \\
         \@put@covertitle{\@csupervisortitle} & \@csupervisor \\
       \end{tabular}
+
+      % 工程硕士
+
+      % \begin{tabular}{p{\@title@width}@{：}l}
+      % \@put@covertitle{\@cfirstsubjecttitle} & \@cfirstsubject \\
+      % \end{tabular}
+
+      % \begin{tabular}{@{}p{7.5em}@{：}l@{}}
+      % \@put@covertitle{\@csubjecttitle} & \@csubject \\
+      % \end{tabular}
+
+      % \begin{tabular}{p{\@title@width}@{：}l}
+      % \@put@covertitle{\@cauthortitle} & \@cauthor \\
+      % \@put@covertitle{\@csupervisortitle} & \@csupervisor \\
+      % \@put@covertitle{\@centerprisesupervisortitle} & \@centerprisesupervisor \\
+      % \end{tabular}
       }}
       
       \vspace*{1cm}
